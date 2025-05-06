@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking - QM Cottage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Book Your Stay</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Products/Services</a>
+    <a href="booking.html">Booking</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="container">
+    <section>
+      <h2>Booking Form</h2>
+      <form action="https://formspree.io/f/movdebzo" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <label for="cottage">Choose Cottage:</label>
+        <select name="cottage" id="cottage" required>
+          <option value="Malaeka & Makayla">Malaeka & Makayla</option>
+          <option value="Matiin & Miqa">Matiin & Miqa</option>
+        </select>
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" name="checkin" required>
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" name="checkout" required>
+        <textarea name="message" placeholder="Additional Request (optional)" rows="4"></textarea>
+        <button type="submit">Submit Booking</button>
+      </form>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2025 QM Cottage Tiny Homestay. All rights reserved.</p>
+  </footer>
+</body>
+</html>
